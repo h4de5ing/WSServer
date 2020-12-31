@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Main-Class: org.example.wsserver.WSServerApplication
+Class-Path: spring-boot-starter-web-2.1.5.RELEASE.jar jackson-databind-2
+ .9.8.jar jackson-annotations-2.9.0.jar jackson-datatype-jdk8-2.9.8.jar 
+ spring-boot-starter-logging-2.1.5.RELEASE.jar spring-webmvc-5.1.7.RELEA
+ SE.jar spring-boot-starter-thymeleaf-2.1.5.RELEASE.jar log4j-to-slf4j-2
+ .11.2.jar spring-web-5.1.7.RELEASE.jar snakeyaml-1.23.jar validation-ap
+ i-2.0.1.Final.jar classmate-1.4.0.jar spring-aop-5.1.7.RELEASE.jar spri
+ ng-jcl-5.1.7.RELEASE.jar spring-context-5.1.7.RELEASE.jar jackson-datat
+ ype-jsr310-2.9.8.jar spring-boot-starter-tomcat-2.1.5.RELEASE.jar jboss
+ -logging-3.3.2.Final.jar logback-classic-1.2.3.jar thymeleaf-extras-jav
+ a8time-3.0.4.RELEASE.jar spring-expression-5.1.7.RELEASE.jar spring-boo
+ t-starter-json-2.1.5.RELEASE.jar jul-to-slf4j-1.7.26.jar spring-boot-st
+ arter-2.1.5.RELEASE.jar spring-websocket-5.1.7.RELEASE.jar tomcat-embed
+ -core-9.0.19.jar jackson-module-parameter-names-2.9.8.jar tomcat-embed-
+ el-9.0.19.jar jackson-core-2.9.8.jar slf4j-api-1.7.26.jar spring-boot-2
+ .1.5.RELEASE.jar unbescape-1.1.6.RELEASE.jar thymeleaf-3.0.11.RELEASE.j
+ ar thymeleaf-spring5-3.0.11.RELEASE.jar logback-core-1.2.3.jar spring-b
+ oot-starter-websocket-2.1.5.RELEASE.jar spring-beans-5.1.7.RELEASE.jar 
+ spring-messaging-5.1.7.RELEASE.jar tomcat-embed-websocket-9.0.19.jar at
+ toparser-2.0.5.RELEASE.jar spring-core-5.1.7.RELEASE.jar spring-boot-au
+ toconfigure-2.1.5.RELEASE.jar javax.annotation-api-1.3.2.jar hibernate-
+ validator-6.0.16.Final.jar log4j-api-2.11.2.jar
+
