@@ -62,7 +62,7 @@ public class WebSocketServer {
 
     @OnError
     public void onError(Session session, Throwable error) {
-        logger.info("用户id为：{}的连接发送错误", session.getId());
+        logger.info("用户id为：{}的连接发生错误", session.getId());
     }
 
     private void sendMessage(Session session, String message) {
