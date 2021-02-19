@@ -45,8 +45,11 @@ public class WebSocketServer {
     @OnMessage
     public void onMessage(String message, Session session) throws IOException {
         //handleMessage(message, session);
-        logger.info("收到用户{}的消息{}", session.getId(), message);
+        logger.info("收到用户{}({})的消息{}", session.getId(), userId, message);
         //sendMessage(session, "收到 " + session.getId() + " 的消息 " + message); //回复用户
+        //包含用户id  表示1V1
+        //包含房间id 表示1VN
+        //没有用户id 房间id 表示1VN广播
         send2All(session, message);
     }
 
@@ -64,6 +67,17 @@ public class WebSocketServer {
     @OnError
     public void onError(Session session, Throwable error) {
         logger.info("用户id为：{}的连接发生错误", session.getId());
+        String removeKey = null;
+        for (String key : WebSocketList.userBeans.keySet()) {
+            Session one = WebSocketList.userBeans.get(key);
+            if (one.getId().equals(session.getId())) {
+                removeKey = key;
+            }
+        }
+        if (removeKey != null) {
+            WebSocketList.userBeans.remove(removeKey);
+            logger.info("{},{} -->onError......还剩余人数:{}", removeKey, session.getId(), WebSocketList.userBeans.size());
+        }
     }
 
     private void sendMessage(Session session, String message) {
